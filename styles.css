@@ -1,16 +1,55 @@
-/* ... Other styles ... */
+/* Reset default margin/padding and set background color */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: darkgray;
+    font-family: Arial, sans-serif;
+}
 
+/* Container for content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Heading styles */
+h3 {
+    color: #003366; /* Sapphire blue */
+}
+
+/* Link styles */
+a {
+    color: #003366;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Disclaimer and contact details */
+.disclaimer {
+    background-color: #003366;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Contact details layout */
 .contact-details {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
+/* Contact column styles */
 .contact-column {
-    flex: 1;
-    padding: 10px;
+    flex-basis: calc(50% - 10px);
     background-color: #003366;
+    padding: 10px;
     border-radius: 5px;
-    margin: 10px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
 }
@@ -22,4 +61,21 @@
 .contact-column .details p {
     margin: 0;
     color: white;
+}
+
+/* Download button styles */
+a.download-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+a.download-button:hover {
+    background-color: #001f3f; /* Darker shade on hover */
 }
